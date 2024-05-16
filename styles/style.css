@@ -32,7 +32,8 @@ body {
 
 /* outlet size common */
 .header-size-container,
-.gammer-container {
+.gammer-container,
+.online-game-funny-video {
     max-width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
@@ -73,7 +74,8 @@ body {
 .nav-link-container>ul,
 .follow-us,
 .banner-container,
-.gammer-container {
+.gammer-container,
+.game-and-video-container {
     display: flex;
     align-items: center;
 }
@@ -185,6 +187,41 @@ body {
     color: #534C64;
 }
 
+/* online game and funny video styles */
+.online-game-funny-video {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.online-game-header {
+    color: #0B0223;
+    margin: 0px 0 16px 0;
+}
+
+.game-and-video-container {
+    margin-top: 48px;
+    gap: 24px;
+}
+
+.single-game-video>img {}
+
+.single-game-video>img:hover {
+    color: #0B0223;
+    opacity: 90%;
+}
+
+.single-game-video>p {
+    color: #534C64;
+    text-align: left;
+}
+
+.single-game-video>p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
 /* -----------------------------Responsive Media Query -------------------------------- */
 /* responsive for mobile devise */
 
@@ -196,7 +233,8 @@ body {
     .nav-container,
     .nav-link-container,
     .nav-link-container>ul,
-    .gammer-container {
+    .gammer-container,
+    .game-and-video-container {
         flex-direction: column;
     }
 
@@ -242,6 +280,9 @@ body {
         text-align: center;
     }
 
+    .single-game-video>p {
+        padding: 0 20px;
+    }
 }
 
 /* responsive for tab */
@@ -289,5 +330,10 @@ body {
 
     .gamer-right-content {
         text-align: center;
+    }
+
+    .game-and-video-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
