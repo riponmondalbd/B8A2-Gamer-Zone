@@ -31,15 +31,18 @@ body {
 }
 
 /* outlet size common */
-.header-size-container {
+.header-size-container,
+.gammer-container {
     max-width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 /* 18px description common */
 .common-description {
     font-size: 18px;
+    font-weight: 400;
 }
 
 /* 20px font size description */
@@ -63,25 +66,24 @@ body {
     border-radius: 48px;
 }
 
-/* ----------------------- Main Style start---------------------------------- */
-/* header logo and nav section style */
-/* logo and nav section */
+/* common flex */
 .nav-container,
 .logo-container,
 .nav-link-container,
 .nav-link-container>ul,
 .follow-us,
-.banner-container {
+.banner-container,
+.gammer-container {
     display: flex;
     align-items: center;
 }
 
-.banner-container {
-    padding: 0 20px;
-}
+/* ----------------------- Main Style start---------------------------------- */
+/* header logo and nav section style */
+/* logo and nav section */
 
 .nav-background-container {
-    padding: 38px 20px;
+    padding: 38px 0;
     background-color: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 
@@ -157,6 +159,32 @@ body {
     background-color: #4EC5F7;
 }
 
+/* Wwe are gammer style */
+.gammer-container-bg {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+}
+
+.gamer-right-content {
+    text-align: right;
+}
+
+.gamer-description {
+    margin: 24px 0 32px 0;
+}
+
+.our-purpose {
+    font-size: 24px;
+    font-weight: 500;
+    color: #534C64;
+    margin: 24px 0 15px 0;
+}
+
+.slogan {
+    font-size: 32px;
+    font-weight: 700;
+    color: #534C64;
+}
+
 /* -----------------------------Responsive Media Query -------------------------------- */
 /* responsive for mobile devise */
 
@@ -167,7 +195,8 @@ body {
 
     .nav-container,
     .nav-link-container,
-    .nav-link-container>ul {
+    .nav-link-container>ul,
+    .gammer-container {
         flex-direction: column;
     }
 
@@ -199,6 +228,20 @@ body {
     .btn-sign-in {
         margin-right: 2px;
     }
+
+    .gammer-container-bg {
+        background-color: #FFF;
+    }
+
+    .gamer-left-image img {
+        width: 100%;
+        margin: 36px 0 61px 0;
+    }
+
+    .gamer-right-content {
+        text-align: center;
+    }
+
 }
 
 /* responsive for tab */
@@ -206,7 +249,8 @@ body {
 
     .nav-container,
     .nav-link-container,
-    .nav-link-container>ul {
+    .nav-link-container>ul,
+    .gammer-container {
         flex-direction: column;
     }
 
@@ -230,5 +274,20 @@ body {
     .banner-container-background {
         background-position: bottom;
         background-size: 65%;
+    }
+
+    .gammer-container-bg {
+        background-color: #FFF;
+    }
+
+    .gamer-left-image img {
+        width: 70%;
+        display: block;
+        margin: 36px auto 61px auto;
+        /* margin: 36px 0 61px 0; */
+    }
+
+    .gamer-right-content {
+        text-align: center;
     }
 }
