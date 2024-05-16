@@ -22,9 +22,45 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+/* linear gradient color */
+.linear-gradient-color {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* outlet size common */
+.header-size-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
 /* 18px description common */
 .common-description {
     font-size: 18px;
+}
+
+/* 20px font size description */
+.another-common-description20 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* 48 px common header */
+.common-header {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+/* common button */
+.common-button {
+    color: #FFF;
+    padding: 21px 40px;
+    border: none;
+    border-radius: 48px;
 }
 
 /* ----------------------- Main Style start---------------------------------- */
@@ -34,22 +70,21 @@ body {
 .logo-container,
 .nav-link-container,
 .nav-link-container>ul,
-.follow-us {
+.follow-us,
+.banner-container {
     display: flex;
     align-items: center;
 }
 
+.banner-container {
+    padding: 0 20px;
+}
+
 .nav-background-container {
-    padding: 38px 0;
+    padding: 38px 20px;
     background-color: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 
-}
-
-.nav-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    justify-content: space-between;
 }
 
 .logo-container {
@@ -85,6 +120,43 @@ body {
     color: #F61C0D;
 }
 
+/* banner section style */
+.banner-container-background {
+    background-image: url('../images/Group\ 14.png');
+    background-repeat: no-repeat;
+}
+
+.top-banner-heading {
+    font-weight: 600;
+}
+
+.top-banner-goat-heading {
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+.banner-content-container>p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+.btn-group {
+    margin-top: 24px;
+}
+
+.btn-sign-in {
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    margin-right: 24px;
+}
+
+.btn-go-rogue {
+    background-color: #4EC5F7;
+}
+
 /* -----------------------------Responsive Media Query -------------------------------- */
 /* responsive for mobile devise */
 
@@ -106,6 +178,27 @@ body {
     .nav-link-container>ul {
         margin-bottom: 62px;
     }
+
+    .banner-container-background {
+        background-position: bottom;
+        background-size: 550px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content-container {
+        margin: 131px 30px 0 30px;
+    }
+
+    .banner-image-container>img {
+        width: 100%;
+    }
+
+    .btn-sign-in {
+        margin-right: 2px;
+    }
 }
 
 /* responsive for tab */
@@ -123,5 +216,19 @@ body {
 
     .nav-link-container>ul {
         margin-bottom: 62px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-image-container>img {
+        width: 90%;
+        margin-left: 50px;
+    }
+
+    .banner-container-background {
+        background-position: bottom;
+        background-size: 65%;
     }
 }
