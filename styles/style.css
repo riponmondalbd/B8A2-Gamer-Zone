@@ -34,7 +34,8 @@ body {
 .header-size-container,
 .gammer-container,
 .online-game-funny-video,
-.play-instantly {
+.play-instantly,
+.main-career-container {
     max-width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
@@ -76,7 +77,9 @@ body {
 .follow-us,
 .banner-container,
 .gammer-container,
-.game-and-video-container {
+.game-and-video-container,
+.main-career-container,
+.career-container {
     display: flex;
     align-items: center;
 }
@@ -249,6 +252,39 @@ body {
     right: -150px;
 }
 
+/* career styles */
+.career-bg {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+}
+
+.career-description {
+    margin-top: 24px;
+}
+
+.main-career-container {
+    color: #FFF;
+}
+
+.career-container {
+    gap: 97px;
+    margin-top: 32px;
+}
+
+.career-container li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.right-career-image>img {
+    width: 780px;
+}
+
+.see-all-btn {
+    color: #FF42A5;
+}
+
 /* -----------------------------Responsive Media Query -------------------------------- */
 /* responsive for mobile devise */
 
@@ -261,7 +297,8 @@ body {
     .nav-link-container,
     .nav-link-container>ul,
     .gammer-container,
-    .game-and-video-container {
+    .game-and-video-container,
+    .main-career-container {
         flex-direction: column;
     }
 
@@ -334,6 +371,20 @@ body {
         bottom: -25px;
         left: -50px;
     }
+
+    .main-career-container {
+        padding: 150px 20px;
+        margin-top: 150px;
+    }
+
+    .right-career-image>img {
+        width: 100%;
+    }
+
+    .see-all-btn {
+        margin-top: 50px;
+        margin-bottom: 120px;
+    }
 }
 
 /* responsive for tab */
@@ -342,7 +393,8 @@ body {
     .nav-container,
     .nav-link-container,
     .nav-link-container>ul,
-    .gammer-container {
+    .gammer-container,
+    .main-career-container {
         flex-direction: column;
     }
 
@@ -410,5 +462,19 @@ body {
         width: 40%;
         bottom: -25px;
         left: -50px;
+    }
+
+    .main-career-container {
+        padding: 150px 20px;
+        margin-top: 150px;
+    }
+
+    .right-career-image>img {
+        width: 100%;
+    }
+
+    .see-all-btn {
+        margin-top: 50px;
+        margin-bottom: 120px;
     }
 }
