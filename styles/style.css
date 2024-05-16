@@ -1,0 +1,127 @@
+/* common styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* logo common */
+.logo-common {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.logo-common-color {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 18px description common */
+.common-description {
+    font-size: 18px;
+}
+
+/* ----------------------- Main Style start---------------------------------- */
+/* header logo and nav section style */
+/* logo and nav section */
+.nav-container,
+.logo-container,
+.nav-link-container,
+.nav-link-container>ul,
+.follow-us {
+    display: flex;
+    align-items: center;
+}
+
+.nav-background-container {
+    padding: 38px 0;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.nav-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo-container {
+    gap: 20px;
+}
+
+.nav-link-container,
+.nav-link-container>ul {
+    gap: 32px;
+}
+
+.nav-link-container>ul>li,
+.follow-us>li {
+    list-style: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.follow-us {
+    gap: 24px;
+    padding: 17PX 24PX;
+    background-color: rgba(11, 2, 35, 0.10);
+    border-radius: 8px;
+}
+
+.follow-us>.fa-tiktok,
+.fa-youtube {
+    font-size: 24px;
+}
+
+.follow-us>.fa-youtube {
+    color: #F61C0D;
+}
+
+/* -----------------------------Responsive Media Query -------------------------------- */
+/* responsive for mobile devise */
+
+@media screen and (max-width:576px) {
+    .nav-background-container {
+        box-shadow: none;
+    }
+
+    .nav-container,
+    .nav-link-container,
+    .nav-link-container>ul {
+        flex-direction: column;
+    }
+
+    .nav-link-container {
+        margin-top: 62px;
+    }
+
+    .nav-link-container>ul {
+        margin-bottom: 62px;
+    }
+}
+
+/* responsive for tab */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .nav-container,
+    .nav-link-container,
+    .nav-link-container>ul {
+        flex-direction: column;
+    }
+
+    .nav-link-container {
+        margin-top: 62px;
+    }
+
+    .nav-link-container>ul {
+        margin-bottom: 62px;
+    }
+}
