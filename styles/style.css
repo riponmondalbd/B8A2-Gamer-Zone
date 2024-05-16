@@ -36,7 +36,8 @@ body {
 .online-game-funny-video,
 .play-instantly,
 .main-career-container,
-.various-games {
+.various-games,
+.footer-container {
     max-width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
@@ -81,7 +82,9 @@ body {
 .game-and-video-container,
 .main-career-container,
 .career-container,
-.single-game {
+.single-game,
+.footer-nav>ul,
+.footer-police-nav>ul {
     display: flex;
     align-items: center;
 }
@@ -309,6 +312,49 @@ body {
     background: #FFF;
 }
 
+/* footer section style */
+.footer-bg-container {
+    background-color: #0B0223;
+    color: #FFF;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 66px;
+}
+
+.footer-nav>ul,
+.footer-police-nav>ul {
+    gap: 60px;
+    justify-content: center;
+}
+
+.footer-nav>ul>li,
+.footer-police-nav>ul>li {
+    list-style: none;
+    margin-bottom: 66px;
+}
+
+.footer-social-icons,
+.fa-twitter,
+.fa-facebook,
+.fa-youtube,
+.fa-linkedin,
+.fa-instagram,
+.fa-apple {
+    font-size: 40px;
+    margin-right: 40px;
+    color: white;
+}
+
+.footer-police-nav>ul>li {
+    margin-bottom: 28px;
+    margin-top: 64px;
+}
+
 /* -----------------------------Responsive Media Query -------------------------------- */
 /* responsive for mobile devise */
 
@@ -412,6 +458,29 @@ body {
 
     .various-games {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-nav>ul,
+    .footer-police-nav>ul {
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+
+    .footer-nav>ul>li,
+    .footer-police-nav>ul>li {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .footer-social-icons,
+    .fa-twitter,
+    .fa-facebook,
+    .fa-youtube,
+    .fa-linkedin,
+    .fa-instagram,
+    .fa-apple {
+        margin-right: 5px;
+        margin-bottom: 40px;
     }
 }
 
